@@ -29,3 +29,4 @@ resource "aws_instance" "web" {
 # https://developer.hashicorp.com/terraform/language/values/variables
 # https://developer.hashicorp.com/terraform/language/validate
 # https://developer.hashicorp.com/terraform/language/manage-sensitive-data
+# Nessa aula não cheguei a fazer deploy do terraform
