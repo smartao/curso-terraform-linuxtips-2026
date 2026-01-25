@@ -20,9 +20,10 @@ resource "aws_instance" "example" {
 
   tags = {
     Name = "HelloWorld"
+    Env  = "develop"
   }
 }
 
+
 # Fontes
-# https://github.com/gomex/descomplicando_terraform_turma_2024/tree/main/dia_01/aula_08_backend
-# https://www.toptal.com/developers/gitignore/api/terraform
+# https://developer.hashicorp.com/terraform/language/expressions
