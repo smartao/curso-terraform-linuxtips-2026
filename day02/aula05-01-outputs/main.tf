@@ -24,6 +24,7 @@ resource "aws_instance" "web" {
     Plataforma = data.aws_ami.ubuntu.platform_details
   }
 }
+
+
 # Fontes
-# https://developer.hashicorp.com/terraform/language/state/purpose 
-# Nessa aula não cheguei a fazer deploy do terraform
+#  https://developer.hashicorp.com/terraform/language/values/outputs
