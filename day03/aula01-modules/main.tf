@@ -6,3 +6,4 @@ module "projetoa" {
 
 # Fonte
 # https://developer.hashicorp.com/terraform/language/modules
+# https://developer.hashicorp.com/terraform/language/modules/configuration
