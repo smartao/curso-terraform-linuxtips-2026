@@ -1,6 +1,6 @@
 module "projetoa" {
-  source = "./instancias"
-  nome   = "projetoA"
+  source      = "./instancias"
+  nome        = "projetoA"
   environment = "Production"
 }
 

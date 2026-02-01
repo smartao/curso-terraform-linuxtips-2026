@@ -1,5 +1,5 @@
 variable "image_id" {
-  type = string
+  type        = string
   description = "O ID da AMI usada"
   validation {
     condition     = length(var.image_id) > 4 && substr(var.image_id, 0, 4) == "ami-"

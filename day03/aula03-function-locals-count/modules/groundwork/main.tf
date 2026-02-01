@@ -5,13 +5,13 @@ locals {
 resource "aws_vpc" "main" {
   cidr_block = var.cidr_block
 
-    tags = {
+  tags = {
     Name = "Curso-LinuxTips-vpc-main"
   }
 }
 
 resource "aws_subnet" "main" {
-  count = 2
+  count      = 2
   vpc_id     = aws_vpc.main.id
   cidr_block = local.cidr_block_subnets[count.index]
 

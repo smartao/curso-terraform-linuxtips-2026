@@ -16,8 +16,8 @@ data "aws_ami" "ubuntu" {
 
 data "aws_ami" "ubuntu_west" {
   most_recent = true
-  provider = aws.west
-  
+  provider    = aws.west
+
   filter {
     name   = "name"
     values = ["ubuntu/images/hvm-ssd/ubuntu-jammy-22.04-amd64-server-*"]
@@ -46,7 +46,7 @@ resource "aws_instance" "web" {
 resource "aws_instance" "web_west" {
   ami           = data.aws_ami.ubuntu_west.id
   instance_type = "t3.micro"
-  provider = aws.west
+  provider      = aws.west
 
   tags = {
     Name = "HelloWorld2"

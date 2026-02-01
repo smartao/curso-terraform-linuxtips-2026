@@ -4,7 +4,7 @@ variable "nome" {
 }
 
 variable "environment" {
-  type = string
+  type        = string
   description = "Ambiente da instancia"
-  default = "dev"
+  default     = "dev"
 }

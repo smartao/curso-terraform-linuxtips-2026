@@ -1,4 +1,4 @@
- terraform {
+terraform {
 
   backend "s3" {
     bucket = "sergei-curso-linuxtips-2026"
